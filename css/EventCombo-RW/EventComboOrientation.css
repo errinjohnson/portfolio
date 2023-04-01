@@ -1,0 +1,171 @@
+#readMore,
+.ZoomLink {
+    display: none;
+}
+
+/*//event flyer section*/
+.eventFlyer {
+    display: none;
+}
+
+/* js 'read more' script*/
+.c10,
+.s1 {
+    margin: 0;
+}
+
+#myID a img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+button#btn {
+    padding: 15px;
+    color: black;
+    font-family: "Baskerville Old Face", georgia;
+    background: rgb(199, 0, 126);
+    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+footer,
+header,
+.text-links li,
+.text-links li a {
+    display: none;
+}
+
+.event-name,
+.vanue-name {
+    color: black;
+    font-weight: 400;
+}
+
+.adiv {
+    font-size: 1.5em;
+    color: black;
+    font-weight: 400;
+}
+
+.buttons {
+    background: transparent !important;
+}
+
+#viewEvent,
+.eventVanue {
+    background: transparent;
+}
+
+html,
+body,
+#viewEvent,
+.enterPromoCode,
+.red-heading,
+.adiv,
+.tot,
+.text24,
+.eventVanue,
+.event-name,
+.buttons a,
+.organiserBox p,
+.organiserBox span a,
+.text-links li a,
+.eventFlyerDes {
+    font-family: "Baskerville Old Face", georgia, Times !important;
+}
+
+.ticdes p,
+.ticdetail {
+    font-size: 16px;
+    text-align: left;
+    line-height: 16px;
+}
+
+c12.tides {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.refundPolicyInfo,
+.organiserBox,
+.ticket,
+.buttons a.makeLive,
+.eventBanner,
+.eventVanue {
+    border-radius: 10px;
+}
+
+a {
+    color: tomato;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a:visited {
+    color: violet;
+}
+
+.red-heading,
+.tot,
+.multiDateVenueText,
+.organiserBox a {
+    color: black;
+}
+
+.buttons a.makeLive,
+.buttons,
+.enterPromoCode,
+.tot {
+    background: rgb(199, 0, 126);
+    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
+    color: black;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+section.eventBanner {
+    background: rgb(199, 0, 126);
+    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* .section.eventBanner {
+    background-image: url("/img/RockITMembersMarvelousSix-blurBackgroundSmall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+} */
+
+aside {
+    display: grid;
+    grid-template-columns: auto 50%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+}
+
+@media screen and (min-device-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+
+    .eventFlyerDes:hover {
+        transition: all .8s ease-in-out;
+        transform: scale(1.2);
+    }
+}

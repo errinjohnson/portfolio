@@ -1,0 +1,26 @@
+#readMore { display: none;}/* js 'read more' script*/
+
+button#btn { padding: 15px; color: blue; font-family: georgia; text-transform: uppercase; background-color: #FFEBCD; border-radius: 10px;}
+
+footer{ display: none;}
+
+html, body, #viewEvent, .enterPromoCode, .red-heading, .adiv, .tot, .text24, .eventVanue, .event-name, .buttons a ,.organiserBox p,.organiserBox span a, .text-links li a,  .eventFlyerDes , .bio{font-family: georgia,Times !important;}
+
+a, a.makeLive,  buttons, a:visited, .red-heading, .tot,.multiDateVenueText, .organiserBox a{ color: black; font-weight: 400;}
+
+.event-name, .vanue-name , .adiv {color: white; font-weight: 900; text-shadow: 2.5px 2.5px black;}
+
+.eventVanue{border-radius:12px;}
+
+.ticdes p, .ticdetail { font-size:14px; text-align: left;}
+
+.refundPolicyInfo, .organiserBox, .ticket,.buttons a.makeLive , .eventBanner{ border-radius: 10px;}
+
+
+section.eventBanner,.eventVanue, #viewEvent{background:transparent;}
+
+.eventFlyerDes { background: rgb(248,249,162);
+background: linear-gradient(90deg, rgba(248,249,162,0.5074229520909926) 37%, rgba(239,244,117,0.49341734985009633) 80%); }
+
+body,.enterPromoCode, .eventFlyerDes,.buttons ,.buttons a.makeLive{  background: rgb(131,209,51);
+background: linear-gradient(245deg, rgba(131,209,51,0.5074229520909926) 11%, rgba(230,205,61,0.49341734985009633) 26%, rgba(64,230,61,0.49341734985009633) 46%, rgba(66,129,15,0.42338933864561445) 64%, rgba(244,242,124,0.49341734985009633) 87%); }
