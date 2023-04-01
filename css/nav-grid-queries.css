@@ -1,0 +1,209 @@
+/* ************************************************* GENERAL TAG ELEMENTS ******************************** */
+html {
+    height: auto;
+}
+
+body {
+    height: auto;
+    font-size: 1rem;
+    font-family: 'Indie Flower', cursive;
+    background-color: lavender;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    width: 100%;
+    text-decoration: underline;
+    margin: 0;
+}
+
+li.item {
+    width: 100%;
+    margin: 10px auto;
+}
+
+li.item:hover {
+    background-color: lavender;
+    border-radius: 15px;
+}
+
+
+/* ************************************************* END GENERAL TAG ELEMENTS ******************************** */
+/* *************************************************NAVIGATION ******************************** */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* flex items */
+nav {
+    background-color: ghostwhite;
+    width: 100%;
+    text-align: center;
+}
+
+/* mobile viewport */
+.navMenu {
+    display: none;
+}
+
+.navMenu:active {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+/* ************************************************* HAMBURGER ICON ******************************** */
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+/* CREATING BARS - HAMBURGER */
+.menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(189, 75, 33, 0.2);
+    transition: all .5s ease-in-out;
+
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* ************************************************* END HAMBURGER ICON ******************************** */
+/* ************************************************* END NAVIGATION ******************************** */
+
+/* ************************************************* GRID CONTAINER ******************************** */
+body {
+    display: grid;
+    grid: autoflow -webkit-max-content / 6fr 6fr;
+    grid: autoflow max-content / 6fr 6fr;
+    grid-gap: 1em;
+}
+
+/* ************************************************* GRID COLUMNS ******************************** */
+
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+/* ************************************************* GRID ROWS ******************************** */
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+/* ************************************************* END GRID CONTAINER ******************************** */
+/* ************************************************* FLEX CONTAINER ******************************** */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* flex items */
+nav {
+    background-color: ghostwhite;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-item-nav {
+    /* https://www.w3schools.com/Css/css_inline-block.asp */
+    display: inline-block;
+}
+
+/* ************************************************* END FLEX CONTAINER ******************************** */
+/* ************************************************* MEDIA QUERIES ******************************** */
+@media all and (min-width: 768px) {
+
+    .navMenu {
+        display: inline;
+        margin-top: 20px;
+        height: 100px;
+        text-align: center;
+        background-color: honeydew;
+    }
+
+    .item {
+        display: inline;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    li.item {
+        width: 100%;
+        min-height: 50px;
+        margin: 10px 15px;
+        border-radius: 10px;
+    }
+
+    li.item:hover {
+        width: 100%;
+        background-color: lavender;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
+
+/* ************************************************* END MEDIA QUERIES ******************************** */
