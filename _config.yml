@@ -1,0 +1,3 @@
+defaults:
+  # Allow .htaccess files to override MIME types
+  - htaccess
