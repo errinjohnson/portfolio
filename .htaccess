@@ -1,0 +1,17 @@
+# Set MIME type for CSS files
+
+<Files "\*.css">
+ForceType text/css
+</Files>
+
+# Set MIME type for JavaScript files
+
+<Files "\*.js">
+ForceType application/javascript
+</Files>
+
+# Set MIME type for image files
+
+<FilesMatch "\.(gif|jpe?g|png)$">
+ForceType image/jpeg
+</FilesMatch>
