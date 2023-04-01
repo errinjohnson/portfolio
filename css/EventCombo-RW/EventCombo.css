@@ -15,6 +15,15 @@
     margin: 0;
 }
 
+.iframe {
+    width: 300px;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
 #myID a img {
     max-width: 250px;
     max-height: 250px;
