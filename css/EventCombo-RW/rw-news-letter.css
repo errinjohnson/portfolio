@@ -1,0 +1,15 @@
+html {
+    width: 1100px;
+}
+
+.bg-color-purple {
+    background-color: #d1b3ff;
+}
+
+.bg-color-purple-light {
+    background-color: #f0e6ff;
+}
+
+.container-md, .section-col {
+    margin: 0 auto;
+}
