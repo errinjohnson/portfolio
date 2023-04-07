@@ -1,0 +1,338 @@
+/* * * * * **********  Animations   ******* * * * * * * * * * * */
+
+[data-text="database"]:hover {
+    background-color: aquamarine;
+}
+
+
+/* * * * * **********  GLOBAL VARIABLES   ******* * * * * * * * * * * */
+body {
+    max-width: 950px;
+    margin: auto;
+    color: black;
+    background-color: #F5F5F5;
+    font-family: 'Lora',
+        serif;
+    /* font-family: 'Indie Flower',
+        cursive; */
+}
+
+sup {
+    font-size: 65%;
+    line-height: 1;
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+header.card-header,
+aside.card-header {
+    background-color: transparent;
+}
+
+a {
+    color: purple;
+    font-weight: 600;
+}
+
+a:visited {
+    color: blueviolet;
+    font-weight: 400;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+.bookTime {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+.btn {
+    font-weight: 600;
+    border: 2.5px solid purple;
+}
+
+h5 {
+    margin: .05rem;
+}
+
+.summary p {
+    margin: 10px;
+}
+
+.summary h5 {
+    margin-top: 15px;
+}
+
+.softSkills {
+    display: flex;
+}
+
+.summary,
+.softSkills,
+.softSkills2,
+.devSkills,
+.education,
+.certs,
+.portfolio,
+.portfolio2 {
+    text-align: left;
+}
+
+.portfolio,
+.portfolio2,
+.education,
+.certs {
+    align-items: center;
+}
+
+.card-header,
+.card-body {
+    padding: 0 1.25rem;
+}
+
+header,
+aside,
+.devSkills h5:nth-of-type(1),
+.card-header a,
+.card-title a,
+.summary h5,
+.portfolio,
+.portfolio2,
+.workExp h5,
+.summary h3,
+h6.card-title {
+    text-align: center;
+}
+
+p.card-text,
+.card-text {
+    text-align: justify;
+}
+
+.education li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+ul.ulsoftSkills1,
+ul.ulsoftSkills2,
+.edu {
+    padding-left: 0;
+    text-align: left;
+}
+
+h6.card-title {
+    margin: 10px auto 20px auto;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.haleh {
+    font-size: .8em;
+    -webkit-text-decoration: wavy;
+    text-decoration: wavy;
+}
+
+
+
+#footnote,
+#footnote2,
+#footnote3 {
+    font-size: .9em;
+}
+
+/* * * * * **********GRID | FLEXBOX VARIABLES  ******* * * * * * * * * * * */
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+
+}
+
+aside {
+    grid-area: aside;
+
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* NOTE:column reversed for 'ASIDE' TAG */
+aside {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.softSkills-grid {
+    display: grid;
+    grid-template-areas:
+        "card-softSkills1-2 card-softSkills1-2"
+        "softSkills softSkills2";
+    align-content: center;
+    justify-content: center;
+}
+
+.card-softSkills1-2 {
+    grid-area: card-softSkills1-2;
+    text-align: center;
+}
+
+.softSkills {
+    grid-area: softSkills;
+}
+
+.softSkills2 {
+    grid-area: softSkills2;
+}
+
+footer {
+    display: grid;
+    grid-template-areas:
+        "footnote footnote"
+        "footnote2 footnote2"
+        "footnote3 footnote3"
+        "print update";
+}
+
+#footnote {
+    grid-area: footnote;
+}
+
+#footnote2 {
+    grid-area: footnote2;
+}
+
+#footnote3 {
+    grid-area: footnote3;
+}
+
+.print {
+    grid-area: print;
+}
+
+.update {
+    grid-area: update;
+}
+
+#footnote,
+#footnote2,
+#footnote3,
+.print,
+.update {
+    display: flex;
+    margin: 10px 5px;
+    justify-content: stretch;
+}
+
+/* * * * * ********** MEDIA QUERY  ******* * * * * * * * * * * */
+@media screen and (min-width:676px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header aside"
+            "main main"
+            "footer footer";
+    }
+
+    .softSkills-grid {
+        display: grid;
+        grid-template-areas:
+            "card-softSkills1-2"
+            "softSkills"
+            "softSkills2";
+    }
+
+    .ulsoftSkills1 {
+        margin-bottom: 2px;
+    }
+
+    .card-softSkills1-2 {
+        margin: .8px;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "summary summary summary summary"
+            "softSkills softSkills2 devSkills devSkills"
+            "portfolio portfolio portfolio2 portfolio2"
+            "education education certs certs"
+            "workExp workExp workExp workExp"
+            "workExp2 workExp2 workExp2 workExp2"
+            "workExp3 workExp3 workExp3 workExp3"
+            "workExp4 workExp4 workExp4 workExp4";
+    }
+
+    .summary {
+        grid-area: summary;
+    }
+
+    .devSkills {
+        grid-area: devSkills;
+    }
+
+    .portfolio {
+        grid-area: portfolio;
+    }
+
+    .portfolio2 {
+        grid-area: portfolio2;
+    }
+
+    .education {
+        grid-area: education;
+    }
+
+    .certs {
+        grid-area: certs;
+    }
+
+    .workExp {
+        grid-area: workExp;
+    }
+
+    .workExp2 {
+        grid-area: workExp2;
+    }
+
+    .workExp3 {
+        grid-area: workExp3;
+    }
+
+    .workExp4 {
+        grid-area: workExp4;
+    }
+
+}
+
+/* * * * * ********** END MEDIA QUERY  ******* * * * * * * * * * * */
