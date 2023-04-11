@@ -2,6 +2,17 @@ html {
     width: 1100px;
 }
 
+body {
+    max-width: 950px;
+    margin: auto;
+    color: black;
+    background-color: #F5F5F5;
+    font-family: 'Lora',
+        serif;
+    /* font-family: 'Indie Flower',
+        cursive; */
+}
+
 .bg-color-purple {
     background-color: #d1b3ff;
 }
@@ -10,6 +21,7 @@ html {
     background-color: #f0e6ff;
 }
 
-.container-md, .section-col {
+.container-md,
+.section-col {
     margin: 0 auto;
 }
