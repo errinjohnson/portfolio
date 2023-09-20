@@ -42,11 +42,11 @@ function addElement() {
     document.body.insertBefore(newDiv, currentDiv);
 }
 
-function changeInnerHTML() {
-    //change node with text "Speakers to 'Guest Speaker(s)'"
-    x = document.getElementsByClassName("red-heading");
-    y = x[0];
-    y.innerHTML = "Guest Speaker(s)";
-    // console.log(y);
-}
-changeInnerHTML();
+// function changeInnerHTML() {
+//     //change node with text "Speakers to 'Guest Speaker(s)'"
+//     x = document.getElementsByClassName("red-heading");
+//     y = x[0];
+//     y.innerHTML = "Guest Speaker(s)";
+//     // console.log(y);
+// }
+// changeInnerHTML();
