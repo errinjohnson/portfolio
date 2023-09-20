@@ -31,7 +31,7 @@ function addElement() {
     newContent.setAttribute("class", "mx-auto");
 
     let newContent2 = document.createElement("img");
-    newContent2.src = "https://github.com/errinjohnson/software-dev-portfolio/blob/main/EventCombo/img-EventCombo/RockIT_Logo.jpg";
+    newContent2.src = "https://github.com/errinjohnson/portfolio/blob/main/img/EventCombo-RW/RockIT_Logo.jpg";
     newContent2.setAttribute("class", "rounded mx-auto d-block");
 
     newContent.appendChild(newContent2);
