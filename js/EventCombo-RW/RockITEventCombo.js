@@ -14,7 +14,6 @@ function readMore() { //get elements assign to variable
         btnText.innerHTML = "read more";
     }
 }
-document.body.onload = addElement;
 
 function addElement() {
     // CREATE NEW DIV add NEW CONTENT and SET ATTRIBUTE
