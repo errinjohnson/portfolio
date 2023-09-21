@@ -1,4 +1,3 @@
-//https://calendar.google.com/calendar/u/0/r/eventedit?text=Small+Business+%0ACYBER+BOOTCAMP&dates=20210823T150000Z/20210914T220000Z&details=+ZOOM%20+%20Why+should+women+learn+Cybersecurity?++%0A+++++++%0A+++++++%0A++++++++There+is+a+skills+shortage+in+cybersecurity+within+the+Metro+Louisville+demographic.&location
 
 function readMore() { //get elements assign to variable
     var dotText = document.getElementById("dot");
@@ -16,10 +15,6 @@ function readMore() { //get elements assign to variable
     }
 }
 document.body.onload = addElement;
-// document.getElementById("viewEvent").addEventListener("load",addElement2);
-
-// let str = document.getElementsByClassName("div.adiv:nth-child(4)");
-// str.innerHTML = "New Dates!";
 
 function addElement() {
     // CREATE NEW DIV add NEW CONTENT and SET ATTRIBUTE
@@ -41,12 +36,3 @@ function addElement() {
     let currentDiv = document.getElementById("viewEvent");
     document.body.insertBefore(newDiv, currentDiv);
 }
-
-// function changeInnerHTML() {
-//     //change node with text "Speakers to 'Guest Speaker(s)'"
-//     x = document.getElementsByClassName("red-heading");
-//     y = x[0];
-//     y.innerHTML = "Guest Speaker(s)";
-//     // console.log(y);
-// }
-// changeInnerHTML();
