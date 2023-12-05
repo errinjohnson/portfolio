@@ -137,7 +137,9 @@ a:visited {
     background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
     color: black;
 }
-
+/* .card {
+    min-width: 300px;
+} */
 body {
     background-color: whitesmoke;
 }
@@ -156,17 +158,8 @@ section.eventBanner {
     opacity: .5;
 }
 
-main,
-aside {
-    display: grid;
-    grid-template-columns: 300px 250px auto;
-    gap: 10px;
-}
-
-/* @media screen and (max-device-width: 768px) {
-   section.eventBanner{
-    background-image:url("");
-    max-width: 960px;
-    margin: 0 auto;
+ @media (min-width: 900px) {
+    #img-fluid {
+        max-width: 25% !important;
+      }
     }
-  } */
