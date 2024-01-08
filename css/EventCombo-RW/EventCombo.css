@@ -1,70 +1,74 @@
 #readMore,
 .zoomLink {
-    display: none;
-    background-color: rgb(192, 193, 255);
+  display: none;
+  background-color: rgb(192, 193, 255);
 }
 
 /*//event flyer section*/
 .eventFlyer {
-    display: none;
+  display: none;
 }
 
 /* js 'read more' script*/
 .c10,
 .s1 {
-    margin: 0;
+  margin: 0;
 }
 
 .iframe {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
 iframe {
-    width: 100%;
+  width: 100%;
 }
 
 #myID a img {
-    max-width: 250px;
-    max-height: 250px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 button#btn {
-    padding: 15px;
-    color: black;
-    font-family: georgia;
-    background: rgb(199, 0, 126);
-    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
-    text-transform: uppercase;
-    border-radius: 10px;
+  padding: 15px;
+  color: black;
+  font-family: georgia;
+  background: rgb(199, 0, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 0, 126, 1) 28%,
+    rgba(178, 40, 148, 0.5387198824842436) 45%
+  );
+  text-transform: uppercase;
+  border-radius: 10px;
 }
 
 footer,
 header,
 .text-links li,
 .text-links li a {
-    display: none;
+  display: none;
 }
 
 .event-name,
 .vanue-name {
-    color: black;
-    font-weight: 400;
+  color: black;
+  font-weight: 400;
 }
 
 .adiv {
-    font-size: 1.5em;
-    color: black;
-    font-weight: 400;
+  font-size: 1.5em;
+  color: black;
+  font-weight: 400;
 }
 
 .buttons {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 #viewEvent,
 .eventVanue {
-    background: transparent;
+  background: transparent;
 }
 
 html,
@@ -82,19 +86,19 @@ body,
 .organiserBox span a,
 .text-links li a,
 .eventFlyerDes {
-    font-family: georgia, Times !important;
+  font-family: georgia, Times !important;
 }
 
 .ticdes p,
 .ticdetail {
-    font-size: 16px;
-    text-align: left;
-    line-height: 16px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 16px;
 }
 
 c12.tides {
-    padding-left: 10px;
-    padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 .refundPolicyInfo,
@@ -103,63 +107,71 @@ c12.tides {
 .buttons a.makeLive,
 .eventBanner,
 .eventVanue {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 a {
-    color: tomato;
+  color: tomato;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a:visited {
-    color: violet;
+  color: violet;
 }
 
 .red-heading,
 .tot,
 .multiDateVenueText,
 .organiserBox a {
-    color: black;
+  color: black;
 }
 
 .buttons a.makeLive,
 .buttons,
 .enterPromoCode,
 .tot {
-    background: rgb(199, 0, 126);
-    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
-    color: black;
+  background: rgb(199, 0, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 0, 126, 1) 28%,
+    rgba(178, 40, 148, 0.5387198824842436) 45%
+  );
+  color: black;
 }
 /* .card {
     min-width: 300px;
 } */
 body {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 section.eventBanner {
-    background: rgb(199, 0, 126);
-    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
-    max-width: 960px;
-    margin: 0 auto;
+  background: rgb(199, 0, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 0, 126, 1) 28%,
+    rgba(178, 40, 148, 0.5387198824842436) 45%
+  );
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .imgBg {
-    background-image: url("#");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .5;
+  background-image: url("#");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
 }
 
- @media (min-width: 900px) {
-    #img-fluid {
-        max-width: 25% !important;
-      }
-    }
+@media (min-width: 900px) {
+  #img-fluid {
+    max-width: 25% !important;
+  }
+}
