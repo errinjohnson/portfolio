@@ -175,3 +175,8 @@ section.eventBanner {
     max-width: 25% !important;
   }
 }
+@media (min-width: 900px) {
+  #img-feb1, #img-feb2 {
+    max-width: 100% !important;
+  }
+}
