@@ -178,5 +178,10 @@ section.eventBanner {
 @media (min-width: 900px) {
   #img-feb1 {
     max-width: 100% !important;
-  }
+    }
+}
+@media (min-width: 1375px) {
+  #img-feb1 {
+    float: left;
+    }
 }
