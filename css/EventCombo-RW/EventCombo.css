@@ -24,9 +24,10 @@ iframe {
   width: 100%;
 }
 
-#myID a img {
-  max-width: 250px;
-  max-height: 250px;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 button#btn {
@@ -168,20 +169,4 @@ section.eventBanner {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
-}
-
-@media (min-width: 900px) {
-  #img-fluid {
-    max-width: 25% !important;
-  }
-}
-@media (min-width: 900px) {
-  #img-feb1 {
-    max-width: 100% !important;
-    }
-}
-@media (min-width: 1375px) {
-  #img-feb1 {
-    float: left;
-    }
 }
