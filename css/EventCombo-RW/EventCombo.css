@@ -24,10 +24,20 @@ iframe {
   width: 100%;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px; /* Space between each profile */
+}
+
+.profile-container img {
+  max-width: 250px;
+}
+
+.profile-paragraph {
+  flex: 1;
+  margin: 0;
 }
 
 button#btn {
