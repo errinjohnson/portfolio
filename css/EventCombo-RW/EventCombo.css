@@ -23,21 +23,10 @@
 iframe {
   width: 100%;
 }
-
-.profile-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 20px; /* Space between each profile */
-}
-
-.profile-container img {
-  max-width: 250px;
-}
-
-.profile-paragraph {
-  flex: 1;
-  margin: 0;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 button#btn {
