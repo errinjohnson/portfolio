@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>Manage Activities</h2>
+    <form id="activitiesForm" class="mb-3">
+        <div class="form-group">
+            <label for="activityLogID">Activity Log ID:</label>
+            <input type="number" id="activityLogID" class="form-control" placeholder="Enter Activity Log ID">
+        </div>
+        <div class="form-group">
+            <label for="activityType">Activity Type:</label>
+            <select id="activityType" class="form-control" onchange="updateDescription()">
+                <option value="">Select Activity Type</option>
+                <option value="Job Search">Job Search</option>
+                <option value="Resume Building">Resume Building</option>
+                <option value="On-boarding">On-boarding</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" class="form-control" placeholder="Description will appear based on selected type" readonly></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Activity</button>
+    </form>
+
+    <!-- Display Area for Activities -->
+    <h4>Submitted Activities</h4>
+    <ul id="activitiesList" class="list-group"></ul>
+</div>
