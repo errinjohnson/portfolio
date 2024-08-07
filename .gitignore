@@ -6,7 +6,6 @@ appsettings.json
 /dist
 /AuthBillPro_Deployment
 /AuthBillProBackUP
-/activityLog-DebV
 
 # Ignore all files
 *.log
