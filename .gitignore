@@ -4,11 +4,12 @@ appsettings.json
 # Ignore entire directories
 /node_modules
 /dist
-# Ignore all .log files
+/AuthBillPro_Deployment
+/AuthBillProBackUP
+# Ignore all files
 *.log
-
-# Ignore all .tmp files
+*.json
 *.tmp
-# Ignore all files named 'config.json' in any directory
-config.json
+
+
 
