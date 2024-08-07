@@ -4,8 +4,6 @@ appsettings.json
 # Ignore entire directories
 /node_modules
 /dist
-/AuthBillPro_Deployment
-/AuthBillProBackUP
 
 # Ignore all files
 *.log
