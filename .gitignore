@@ -1,0 +1,14 @@
+# Ignore specific files
+appsettings.json
+
+# Ignore entire directories
+/node_modules
+/dist
+# Ignore all .log files
+*.log
+
+# Ignore all .tmp files
+*.tmp
+# Ignore all files named 'config.json' in any directory
+config.json
+
