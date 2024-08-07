@@ -7,11 +7,14 @@ appsettings.json
 /AuthBillPro_Deployment
 /AuthBillProBackUP
 /activityLog-DebV
+
 # Ignore all files
 *.log
 *.json
 *.tmp
 *.crt
+*.htaccess
+*.yml
 
 
 
