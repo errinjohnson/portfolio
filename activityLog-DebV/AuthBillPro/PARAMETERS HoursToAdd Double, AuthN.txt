@@ -1,0 +1,75 @@
+PARAMETERS HoursToAdd Double, AuthNum Text (255);
+UPDATE auth
+SET auth_remaining_billable_hours = auth_remaining_billable_hours + [HoursToAdd]
+WHERE auth_number = [AuthNum];
+
+
+SELECT id.invoice_id, SUM(id.actBillable_hours) AS TotalBillableHours, inv.auth_number AS AuthNumber
+FROM invoice_details AS id INNER JOIN invoices AS inv ON id.invoice_id = inv.invoice_id
+WHERE inv.invoice_number=[?]
+GROUP BY id.invoice_id, inv.auth_number;
+
+Private Sub btnDeleteInvoice_Click()
+    Dim invoiceNum As Long
+    Dim db As DAO.Database
+    Dim qdf As DAO.QueryDef
+    Dim rst As DAO.Recordset
+    Dim totalBillableHours As Double
+    Dim authNumber As String
+
+    If IsNull(Me.cboInvoiceNumber) Or IsNull(Me.cboParticipantName) Then
+        MsgBox "Please select both Participant Name and Invoice Number.", vbExclamation
+        Exit Sub
+    End If
+
+    invoiceNum = Me.cboInvoiceNumber.Value
+    Set db = CurrentDb
+
+    ' Calculate total billable hours before deletion
+    Set qdf = db.QueryDefs("qryTotalBillableHours_invoiceID")
+    qdf.parameters(0).Value = invoiceNum
+    Set rst = qdf.OpenRecordset()
+
+    If Not rst.EOF Then
+        totalBillableHours = rst!totalBillableHours
+        authNumber = rst!authNumber  ' Ensure you have this field in your recordset
+        Debug.Print "Billable Hours: " & totalBillableHours & ", Auth Number: " & authNumber
+    Else
+        MsgBox "No billable hours found for this invoice.", vbInformation
+    End If
+    rst.Close
+
+    ' Execute the query to delete invoice details
+    Set qdf = db.QueryDefs("qryDeleteInvoiceDetails")
+    qdf.parameters(0).Value = invoiceNum
+    qdf.Execute dbFailOnError
+
+    ' Execute the query to delete the invoice
+    Set qdf = db.QueryDefs("qryDeleteInvoice")
+    qdf.parameters(0).Value = invoiceNum
+    qdf.Execute dbFailOnError
+
+    ' Update the authorization's remaining billable hours
+    Set qdf = db.QueryDefs("qryUpdateAuthHours")
+    qdf.parameters(0).Value = totalBillableHours
+    qdf.parameters(1).Value = authNumber
+    qdf.Execute dbFailOnError
+
+    ' Check if any records were affected
+    If qdf.RecordsAffected = 0 Then
+        MsgBox "Invoice Deleted.", vbCritical
+        Debug.Print "Failed to update: Hours - " & totalBillableHours & "; Auth - " & authNumber
+    Else
+        MsgBox totalBillableHours & " hours returned to authorization #" & authNumber & ".", vbInformation
+    End If
+
+    ' Refresh form controls
+    Me.cboInvoiceNumber.Requery
+    Me.cboParticipantName = Null
+    Me.cboInvoiceNumber = Null
+
+    ' Clean up
+    Set rst = Nothing
+    Set qdf = Nothing
+    Set db = Nothing
+End Sub

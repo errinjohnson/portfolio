@@ -1,0 +1,2 @@
+SELECT SUM(Amount) AS OverallTotal
+FROM expenditures;

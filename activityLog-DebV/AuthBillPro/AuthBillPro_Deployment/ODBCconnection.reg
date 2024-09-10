@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\MySQLAuthBillPro2]
+"DATABASE"="AuthBillProV2Demo"
+"DESCRIPTION" = "Demo for invoicing and auth system"
+"Driver"="C:\Program Files\MySQL\MySQL Connector ODBC 9.0\myodbc9w.dll"
+"PORT"="3306"
+"PWD"="!!Ej1964"
+"SERVER"="authbillprov2demo.cb6ikwo0co64.us-east-1.rds.amazonaws.com"
+"UID"="admin"
+"Option"="3"
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+"MySQLAuthBillPro2"="MySQL ODBC 9.0 Driver"

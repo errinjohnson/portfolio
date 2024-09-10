@@ -1,0 +1,1 @@
+NOTE:  If you delete an Invoice, the billable hours is allocated back to remaining billable hours to be used.  If you need to regenerate invoice you deleted with the previous activitie(s), you need to resave the activities or edit if needed, then save.  The important! thing is to rebill the activities billable hours, so the remaining billable hours can be updated accordingly. 
