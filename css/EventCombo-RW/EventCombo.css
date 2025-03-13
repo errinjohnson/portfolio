@@ -169,3 +169,35 @@ section.eventBanner {
   background-size: cover;
   opacity: 0.5;
 }
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+  .container img {
+      max-width: 100%;
+  }
+}
