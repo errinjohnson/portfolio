@@ -169,6 +169,12 @@ section.eventBanner {
   background-size: cover;
   opacity: 0.5;
 }
+body {
+  font: 14px Georgia;
+  color: black;
+  background-color: #f8f9fa;
+  margin: 40px;
+}
 .container {
   max-width: 800px;
   margin: auto;
@@ -176,28 +182,30 @@ section.eventBanner {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-container {
   display: flex;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
-.container img {
+.profile-container img {
   max-width: 250px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
-.text-content {
+.profile-content {
   flex: 1;
   min-width: 300px;
 }
-@media (max-width: 600px) {
-  .container {
+@media (max-width: 768px) {
+  .profile-container {
       flex-direction: column;
       text-align: center;
   }
-  .container img {
+  .profile-container img {
       max-width: 100%;
   }
 }
