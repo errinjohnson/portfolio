@@ -187,7 +187,6 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  flex-wrap: nowrap;
 }
 .profile-container img {
   max-width: 250px;
