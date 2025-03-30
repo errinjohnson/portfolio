@@ -156,6 +156,7 @@ section.eventBanner {
   background: rgb(199, 0, 126);
   background: linear-gradient(
     90deg,
+    
     rgba(199, 0, 126, 1) 28%,
     rgba(178, 40, 148, 0.5387198824842436) 45%
   );
