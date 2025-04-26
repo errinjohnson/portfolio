@@ -216,3 +216,21 @@ body {
     margin-right: auto;
   }
 }
+.card-container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+@media (min-width: 576px) {
+  .card-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    padding: 2rem;
+  }
+}
